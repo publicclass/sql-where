@@ -28,7 +28,7 @@ It's rather convenient to be able to use JSON instead of manually building the W
 
 ### where(query[,options]) -> Where
 
-This is really all the API you need to learn. Pass in an object like the one of the examples above in [How?](#how). Then you can either a
+This is really all the API you need to learn. Pass in an object like the one of the examples above in [How?](#how). Then you can either use the [#sql](#where-sql) and [#values array](#where-values) to make a parameterized query (recommended!) or use [#toString](#where-tostring) to generate a complete condition.
 
 ### new Where(options)
 
@@ -55,6 +55,8 @@ This does the magic of creating conditions from a JSON object.
 ### Where#toString()
 
 This generates a non-parameterized SQL string from [#sql](#where-sql) and [#values](#where-values).
+
+Example: `type = "text" OR status IN ("published","pending")`
 
 __NOTE__ The generated SQL condition is in no way guaranteed to be properly escaped. It only does very simple string escaping. And according to [people way smarter than me](www.codinghorror.com/blog/2005/04/give-me-parameterized-sql-or-give-me-death.html) manually escaping any queries will never be enough to counter SQL injections. So please only use this for debugging.
 
