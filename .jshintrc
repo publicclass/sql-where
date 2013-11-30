@@ -1,0 +1,17 @@
+{
+  "regexdash": true,
+  "node": true,
+  "devel": true,
+  "curly": true,
+  "trailing": true,
+  "sub": true,
+  "laxcomma": true,
+  "expr": true,
+  "lastsemic": true,
+  "camelcase": false,
+  "quotmark": true,
+  "asi": true,
+  "undef": true,
+  "globals": {
+  }
+}

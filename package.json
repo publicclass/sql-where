@@ -1,0 +1,15 @@
+{
+  "name": "sql-where",
+  "version": "0.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "Robert Sköld",
+  "license": "MIT",
+  "devDependencies": {
+    "expect.js": "~0.2.0",
+    "mocha": "~1.14.0"
+  }
+}
