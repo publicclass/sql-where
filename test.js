@@ -64,7 +64,7 @@ describe('sql-where',function(){
       });
     })
 
-    it('type NOT NULL',function(){
+    it('type IS NOT NULL',function(){
       var q = {type:{not:null}};
       expect(where(q).toString()).to.equal(this.test.title);
     })
@@ -126,7 +126,7 @@ describe('sql-where',function(){
       });
     })
 
-    it('"example.type" NOT NULL',function(){
+    it('"example.type" IS NOT NULL',function(){
       var q = {type:{not:null}};
       expect(where(q,opts).toString()).to.equal(this.test.title);
     })

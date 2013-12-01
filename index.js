@@ -59,7 +59,7 @@ function eq(where,k,v,negated){
     if( !negated ){
       return t(where,k) + ' IS NULL';
     } else {
-      return t(where,k) + ' NOT NULL';
+      return t(where,k) + ' IS NOT NULL';
     }
   } else if( !negated ){
     return t(where,k) + ' = ' + s(where,v);
